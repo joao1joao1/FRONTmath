@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matematicafinanceira.css">
+    <script src="./matematicafinanceira.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos1ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar" style="max-width: 170px;">
+                </a>
+
+                <h1>MATEMÁTICA FINANCEIRA</h1>
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>
+                    A matemática financeira é a área da matemática que estuda a equivalência
+                    de capitais no tempo, ou seja, como se comporta o valor do dinheiro no
+                    decorrer do tempo. E, como exemplos dessas operações, podemos citar as
+                    aplicações financeiras, empréstimos, renegociação de dívidas, ou mesmo,
+                    tarefas simples, como calcular o valor de desconto num determinado pro-
+                    duto.</p>
+                <img src="../../assets/imagens-conteudos/matematica-financeira/matematica-financeira-definicao.png"
+                    alt="imagem de matematica financeira">
+            </div>
+
+            <div id="formula">
+                <hr>
+                <h2>FÓRMULA</h2>
+                <hr>
+
+                <h3>Capital (C)</h3>
+                <p>Representa o valor do dinheiro no momento atual. Este valor pode ser de um investimento, dívida ou
+                    empréstimo.</p>
+
+                <h3>Juros (J)</h3>
+                <p>Representam os valores obtidos pela remuneração de um capital. Os juros representam, por exemplo, o
+                    custo do dinheiro tomado emprestado. Ele pode também ser obtido pelo retorno de uma aplicação ou
+                    ainda pela diferença entre o valor à vista e a prazo em uma transação comercial.</p>
+
+                <h3>Montante (M):</h3>
+                <p>Corresponde ao valor futuro, ou seja, é o capital mais os juros acrescidos ao valor. Assim, <strong>
+                        M= C+J</strong> </p>
+
+                <h3>Taxa de juros (i)</h3>
+                <p>É o percentual do custo ou remuneração paga pelo uso do dinheiro. A taxa de juros está sempre
+                    associada a um certo prazo, que pode ser, por exemplo, ao dia, ao mês ou ao ano.</p>
+            </div>
+
+            <div id="jurosSimples">
+                <p>A ideia por trás do juros simples também é similar à ideia do acréscimo, a diferença entre eles é
+                    dada pelo período em que são calculados. Enquanto a taxa do acréscimo é aplicada uma vez, a do juros
+                    simples é calculada em um intervalo de tempo. Podemos calcular o juros simples de determinado
+                    capital C, aplicado à determinada taxa a regime de juros simples (i), em um determinado período de
+                    tempo t, pela fórmula:</p>
+                <p class="resolucoes">J = C · i · t</p>
+                <p>O valor pago ao final dessa aplicação deve ser dado pelo dinheiro aplicado mais o valor do juros e
+                    recebe o nome de montante (M). O montante é dado pela expressão:</p>
+                <p class="resolucoes">M = C + J <br>
+                    M = C + C · i · t <br>
+                    M = C (1 + it) <br>
+                </p>
+                <p>A única preocupação que devemos ter em relação a problemas envolvendo juros simples é com as unidades
+                    de medida de taxa e tempo, elas devem sempre estar em unidades iguais.</p>
+
+                <h3>Exemplo</h3>
+                <p>Marta deseja aplicar R$ 6000 em uma empresa que promete gerar lucros de 20% ao ano sob regime de
+                    juros
+                    simples. O contrato feito por Marta afirma que ela só pode tirar o dinheiro após seis meses,
+                    determine
+                    qual foi o rendimento de seu dinheiro no final desse período.
+                    <br>
+                    Observando o enunciado, veja que o capital é igual a 6000, logo, temos que C = 6000. A taxa de juros
+                    é
+                    de 20% ao ano, e o dinheiro ficará aplicado durante seis meses. Observe que a taxa foi dada ao ano,
+                    e a
+                    do tempo, em meses, e sabemos que a unidade de medida de ambas devem ser a mesma. Vamos encontrar o
+                    valor mensal da taxa, veja:
+                    <br>
+                    Sabemos que a taxa é de 20% ao ano, como um ano tem 12 meses, logo, a taxa mensal será de:
+                </p>
+                <p class="resolucoes">
+                    20% : 12 <br>
+                    1,66% ao mês <br>
+                    0,016 ao mês</p>
+                <p>Substituindo esses dados na fórmula, temos que:</p>
+                <p class="resolucoes">J = C · i · t <br>
+                    J = 6000 · 0,016 · 6 <br>
+                    J = 96 · 6 <br>
+                    J = 576 reais <br>
+                </p>
+                <p>Portanto, o valor a ser retirado no fim dos seis meses é de 576 reais, e o montante é de:</p>
+                <p class="resoulucoes"> M = 6000 + 576 <br>
+                    M = 6576 reais</p>
+            </div>
+
+            <div id="jurosCompostos">
+                <hr>
+                <h2>JUROS COMPOSTOS</h2>
+                <hr>
+
+                <p>No juros simples, o valor da taxa de juros é sempre calculado em cima do capital inicial, a diferença
+                    entre esses dois sistemas (juros simples e compostos) está justamente nesse ponto, ou seja, na forma
+                    como a taxa é calculada. No juros composto, a taxa de juros é sempre calculada em cima do capital do
+                    mês anterior, isso faz com que o juros aumente de maneira exponencial seu valor. A fórmula para
+                    calcular-se o juros no sistema de amortização de juros compostos é dada por:</p>
+                <p class="resolucoes">
+                    M = C · (1 + i)t
+                </p>
+                <p>Em que M é o montante acumulado, C é o valor do capital inicial, i é a taxa de juros dada em
+                    porcentagem, e t é o período no qual o capital ficou aplicado no sistema. Da mesma forma que no
+                    juros simples, no sistema de juros compostos, a taxa e o tempo devem ficar na mesma unidade.</p>
+                <h3>Exemplo</h3>
+                <p>Calcule o valor do montante que Marta recolheria no final dos seis meses ao aplicar seus 6000 reais
+                    sob taxa de juros de 20% ao ano no regime de juros compostos.
+                    <br> (Dado: 1,20,5 ≈ 1,095)
+                    <br>Observe que os dados são os mesmos do exemplo 4, logo, temos que:
+                </p>
+                <p class="resolucoes">C = 6000 <br>
+                    i = 0,2 a.a <br>
+                    t = 0,5 anos
+                </p>
+                <p>Substituindo os dados na fórmula de juros compostos, temos que:</p>
+                <p class="resolucoes">M = 6000 · (1 + 0,2)0,5 <br>
+                    M = 6000 · (1,2)0,5 <br>
+                    M = 6000 · 1,095 <br>
+                    M = 6572,67 reais</p>
+                <p>Portanto, o montante a ser retirado por Marta no sistema de juros simples é de 6572, 67 reais. Veja
+                    que o montante no sistema de juros compostos é maior que no de juros simples, e isso ocorre em todos
+                    os casos.</p>
+            </div>
+        </main>
+
+        <div id="apoio">
+            <h3>Para melhorar seus estudos...</h3>
+            <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                playlist de vídeo aulas sobre este assunto:</p>
+
+            <div id="a">
+                <a href="#" id="laranja">
+                    Mapa <br>mental
+                </a>
+
+                <a href="#" id="azul">
+                    playlist de <br> videoaulas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/1 ano/exercicio1ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="./funcaoexponencial.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

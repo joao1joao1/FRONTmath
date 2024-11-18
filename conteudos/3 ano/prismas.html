@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prismas.css">
+    <script src="./prismas.js" defer type="module"></script>
+
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos3ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar">
+                </a>
+                <h1>ÁREA DE PRISMAS</h1>
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>
+                    Prisma é uma figura espacial que possui duas faces poligonais opostas, paralelas
+                    e congruentes, denominadas bases, separadas por uma distância chamada altura.
+                    As demais faces possuem forma de paralelogramos, sendo os lados os segmentos
+                    que unem os vértices correspondentes das duas bases. O prisma é regular quando
+                    suas bases forem polígonos regulares.
+                </p>
+                <img src="../../assets/imagens-conteudos/area-de-prismas/area-de-prisma-definicao.png" alt="">
+            </div>
+
+            <div id="prismaReto">
+                <hr>
+                <h2>PRISMA RETO</h2>
+                <hr>
+                <p>O prisma é dito reto quando as arestas laterais forem perpendiculares às bases. Neste caso as faces
+                    laterais serão retângulos.</p>
+                <div id="defReto">
+                    <p>
+                        <strong>Definições complementares: </strong> <br>
+                        <strong> Al → </strong> total da área lateral, que é a soma das áreas dos paralelogramos <br>
+                        <strong>Ab → </strong>área do polígono da base (vide fórmulas no artigo Quadrilátero - Cálculo
+                        de áreas) <br>
+                        <strong>h → </strong>altura do prisma (distância entre as duas bases e perpendicular a elas)
+                        <br>
+                    </p>
+                    <img src="../../assets/imagens-conteudos/area-de-prismas/prisma-reto.png" alt="">
+                </div>
+                <span> <strong>
+                        Área total:
+                        <br>
+                        AT = Al + 2. Ab
+                        <br>
+                        Volume do prisma:
+                        <br>
+                        V = Ab . h </strong>
+                </span>
+            </div>
+            <div id="prismaObliquo">
+                <hr>
+                <h2>PRISMA OBLÍQUO</h2>
+                <hr>
+                <div id="obliquoImg">
+                    <img src="../../assets/imagens-conteudos/area-de-prismas/prisma-obliquo.png" alt="">
+                    <p>Quando as arestas laterais não são perpendiculares às bases.
+                        <br>
+                        As fórmulas para cálculo das áreas e do volume continuam as mesmas, pois a altura é sempre a
+                        distância entre as duas bases e perpendicular a elas ou ao plano que as contém.
+                    </p>
+                </div>
+            </div>
+
+            <div id="piramidesRegulares">
+                <hr>
+                <h2>PIRÂMIDES REGULARES</h2>
+                <hr>
+                <div id="regularImg">
+                    <p>Pirâmide: Uma figura espacial que possui uma face poligonal denominada base, e faces laterais em
+                        forma de triângulos com um vértice em comum. A distância deste vértice até a base da pirâmide é
+                        sua altura. A pirâmide é regular quando sua base for um polígono regular.</p>
+                    <img src="../../assets/imagens-conteudos/area-de-prismas/triangulo-regulares.png" alt="">
+                </div>
+            </div>
+
+            <div id="piramideReta">
+                <hr>
+                <h2>PIRÂMIDES RETAS</h2>
+                <hr>
+                <p>A pirâmide é reta quando todos as faces laterais forem todas triângulos iguais. Neste caso a projeção
+                    do vértice da pirâmide sobre a base coincide com o centro geométrico da base.</p>
+                <div id="defReta">
+                    <p>Definições complementares:
+                        <br>
+                        <strong>Al → </strong>total da área lateral que é a soma das áreas dos triângulos laterais
+                        <br>
+                        <strong>Ab → </strong> área do polígono da base (vide fórmulas no artigo Quadrilátero - Cálculo
+                        de áreas)
+                        <br>
+                        <strong> h → </strong>altura da pirâmide (distância entre a base, perpendicular a ela, e o
+                        vértice)
+                    </p>
+                    <img src="../../assets/imagens-conteudos/area-de-prismas/piramide-reta.png" alt="">
+                </div>
+                <span>
+                    Área total: <br>
+                    AT= Al + Ab
+                </span>
+            </div>
+
+            <div id="piramideObliqua">
+                <hr>
+                <h2>PIRÂMIDES OBLÍQUAS</h2>
+                <hr>
+                <div id="obliquaImg">
+                    <img src="../../assets/imagens-conteudos/area-de-prismas/piramide-obliqua.png" alt="">
+                    <p>É aquela em que os triângulos que formam as faces laterais são diferentes ente si. Neste caso, a
+                        projeção do vértice da pirâmide sobre a base não coincide com o centro geométrico da mesma.
+                        <br> <br>
+                        As fórmulas para cálculo das áreas e do volume continuam as mesmas, pois a altura é sempre a
+                        distância entre o vértice e a base, perpendicular a ela ou ao plano que a contém.
+                    </p>
+                </div>
+            </div>
+
+            <div id="especiais">
+                <hr>
+                <h2>PIRÂMIDES E PRISMAS ESPECIAIS</h2>
+                <hr>
+                <p>Um prisma especial, por exemplo, é o cubo: trata-se de um prisma de bases quadradas e iguais às faces
+                    laterais, ou seja, a figura possui seis faces iguais formadas por quadrados.
+                    <br>
+                    Uma pirâmide especial, por exemplo, é o tetraedro: trata-se de uma pirâmide com base triangular
+                    regular e igual às faces laterais, ou seja, possui quatro faces iguais formadas por triângulos
+                    equiláteros.
+                </p>
+            </div>
+
+        </main>
+
+        <div id="apoio">
+            <h3>Para melhorar seus estudos...</h3>
+            <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                playlist de vídeo aulas sobre este assunto:</p>
+
+            <div id="a">
+                <a href="#" id="laranja">
+                    Mapa <br>mental
+                </a>
+
+                <a href="#" id="azul">
+                    playlist de <br> videoaulas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/3 ano/exercicio3ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="./geometriaespacial.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

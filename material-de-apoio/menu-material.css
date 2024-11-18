@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjaclaro: #FFF1D6;
+    --laranjaclaro2: #FFD67C;
+    --branco: #fff;
+}
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('../fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('../fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('../fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('../fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--laranjaclaro2);
+    height: 100vh;
+}
+
+header {
+    background-color: var(--laranja);
+    max-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+}
+
+main {
+    margin-top: 5.375rem;
+}
+
+#divmain {
+    display: flex;
+    align-items: center;
+}
+
+#divmain a {
+    margin-right: 27rem;
+}
+
+#divmain h1 {
+    color: var(--azulescuro);
+    font-family: 'Hanken Grotesk';
+    font-size: 46px;
+    font-weight: bolder;
+}
+
+#navegacao nav {
+    background-color: var(--laranjaclaro);
+    padding: 8px 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+}
+
+#navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    color: var(--azulescuro);
+    font-family: 'Baron Neue';
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#navegacao nav > a:hover{
+    color: var(--laranja);
+    transition: 0.5s;
+}
+
+#conteudos {
+    background-color: var(--laranja);
+    max-width: 1310px;
+    margin: 0 auto;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 2.3rem;
+    padding-block: 4rem;
+}
+
+.q {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.q p {
+    font-size: 27px;
+    font-family: 'Baron Neue';
+    color: var(--azulescuro);
+    gap: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.q #mapas,
+.q #resumos,
+.q #videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapas,
+#resumos,
+#videos {
+    background-color: var(--branco);
+    border-radius: 16px;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#div2 #resumos,
+#div2 #videos {
+    width: 400px;
+    height: 195px;
+}

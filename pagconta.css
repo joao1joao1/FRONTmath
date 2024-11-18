@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjaclaro: #FFF1D6;
+    --laranjaclaro2: #FFD67C;
+    --branco: #fff;
+    --placeholder: #627688;
+}
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('./fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('./fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('./fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('./fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    /* colocar azulquase escuro no body, testar no pc da sala do wesley, para ver tamanho do todo */
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--laranja);
+    max-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+}
+
+#navegacao nav {
+    background-color: var(--laranjaclaro);
+    padding: 8px 45px;
+    border-radius: 25px;
+}
+
+#navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    color: var(--azulescuro);
+    font-family: 'Baron Neue';
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+body {
+    background-color: var(--azulescuro);
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk';
+    font-size: 25px;
+    font-weight: 800;
+    border: 1px solid red;
+}
+
+#dados {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#icone img {
+    margin-right: 1200px;
+    width: 200px;
+    margin-top: 100px;
+    background-color: var(--branco);
+    border-radius: 20px;
+}
+
+h1 {
+    color: var(--laranja);
+}
+
+#dadosUsuario {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 600px;
+    gap: 10px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#inputs input {
+    background-color: hsl(209, 100%, 82%);
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+}
+
+inputs input::placeholder {
+    font-family: 'Circe';
+    font-size: 20px;
+    color: var(--placeholder);
+}
+
+#dadosUsuario button {
+    width: 178px;
+    border: none;
+    height: 56px;
+    font-size: 26px;
+    background-color: var(--laranja);
+    color: var(--azulescuro);
+    border-radius: 8px;
+    font-family: 'Baron Neue';
+}
+
+#progressoGeral {
+    display: flex;
+    flex-direction: row;
+}
+
+#progresso {
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#progresso h2 {
+    color: var(--azulclaro);
+}
+
+#progresso p {
+    color: var(--azulescuro);
+    margin-right: 550px;
+    margin-bottom: 20px;
+}
+
+#maiorPontuacao {
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#maiorPontuacao h2 {
+    color: var(--azulclaro);
+}
+
+#maiorPontuacao strong {
+    color: var(--laranjaclaro2);
+}
+
+#maiorPontuacao span {
+    color: var(--laranja);
+}
+
+#maiorPontuacao p {
+    color: var(--azulzinho);
+}
+
+#maiorPontuacao p strong {
+    color: var(--azulclaro);
+}

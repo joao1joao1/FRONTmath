@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --azulescuro: #0B3D80;
+  --azulclaro: #4285F3;
+  --azulzinho: #79BFFF;
+  --laranja: #F68F06;
+  --laranjaclaro: #FFF1D6;
+  --laranjaclaro2: #FFD67C;
+  --branco: #fff;
+}
+
+@font-face {
+  font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+  src: url('./fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+  font-family: Baron Neue;
+  src: url('./fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+  font-family: Circe;
+  src: url('./fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+  font-family: Lemon Milk;
+  src: url('./fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+
+body {
+  background-color: var(--azulescuro);
+  /* colocar azulquase escuro no body, testar no pc da sala do wesley, para ver tamanho do todo */
+}
+
+#containerGlobal {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#navegacao nav > a:hover{
+  color: var(--laranja);
+  transition: 0.5s;
+}
+
+header {
+  background-color: var(--laranja);
+  max-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 1440px;
+}
+
+#navegacao nav {
+  background-color: var(--laranjaclaro);
+  padding: 8px 45px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+}
+
+#icone div {
+  border-radius: 20px;
+  background-color: var(--branco);
+}
+
+#navegacao a {
+  font-size: 16px;
+  text-decoration: none;
+  margin-inline: 1.2rem;
+  color: var(--azulescuro);
+  font-family: 'Baron Neue';
+}
+
+main {
+  margin-top: 8rem;
+}
+
+#dados {
+  display: flex;
+  justify-content: space-between;
+}
+
+#icone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+#dadosUsuario {
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3.5rem;
+  margin-right: 4rem;
+  border-radius: 20px;
+  border: 1px solid red;
+}
+
+#dadosUsuario input {
+  width: 600px;
+  height: 60px;
+  padding-left: 1rem;
+  padding-block: 2rem;
+  border-radius: 10px;
+  background-color: #79BFFF;
+  border: none;
+}
+
+#dadosUsuario input::placeholder {
+  font-family: 'Circe';
+  font-size: 23px;
+}
+
+#dadosUsuario button {
+  height: 60px;
+  width: 200px;
+  align-self: center;
+  font-size: 25px;
+  font-family: 'Baron Neue';
+  border-radius: 10px;
+  border: none;
+  background-color: #F68F06;
+  color: #0B3D80;
+  margin-top: 1rem;
+}
+
+#dadosUsuario div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+#icone h1 {
+  font-size: 52px;
+  font-family: 'Hanken Grotesk';
+  color: var(--laranja);
+}

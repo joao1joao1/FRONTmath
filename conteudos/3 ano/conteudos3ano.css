@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjamedio: #FFC546;
+    --laranjaclaro: #FFF1D6;
+    --pessego: #FFD67C;
+    --amarelo-claro: #FFF494;
+    --branco: #fff;
+}
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('../../fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('../../fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('../../fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('../../fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--laranja);
+    max-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+}
+
+#userr {
+    z-index: 100;
+    position: absolute;
+    right: 39px;
+    display: flex;
+    align-items: center;
+}
+
+#userr p {
+    font-family: 'Circe';
+    color: var(--azulescuro);
+    font-style: italic;
+    font-weight: 600;
+}
+
+#sair {
+    padding: 5px;
+    background-color: var(--azulescuro);
+    border-radius: 6px;
+    font-family: 'Circe';
+    color: var(--laranja);
+}
+
+#userr #sair:hover {
+    background-color: #082f61;
+    cursor: pointer;
+    color: #a25e06;
+}
+
+#navegacao nav {
+    background-color: var(--laranjaclaro);
+    padding: 8px 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+}
+
+#navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    color: var(--azulescuro);
+    font-family: 'Baron Neue';
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#navegacao nav > a:hover{
+    color: var(--laranja);
+    transition: 0.5s;
+}
+
+body {
+    background-color: var(--laranjaclaro);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk';
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+main img {
+    margin-right: 1200px;
+    width: 200px;
+    margin-top: 100px;
+}
+
+h1 {
+    margin-top: -130px;
+    color: var(--azulescuro);
+    margin-bottom: 70px;
+    font-size: 58px;
+}
+
+p {
+    color: var(--laranja);
+    margin-right: 550px;
+    margin-bottom: 20px;
+}
+
+main nav {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#conteudos {
+    background-color: var(--azulescuro);
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+#conteudos a {
+    width: 220px;
+    margin: 20px;
+    background-color: var(--azulzinho);
+    border-radius: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: var(--azulescuro);
+}

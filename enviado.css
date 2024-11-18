@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjaclaro: #FFF1D6;
+    --laranjaclaro2: #FFD67C;
+    --branco: #fff;
+}
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('./fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('./fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('./fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('./fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    padding: 100px;
+    background-color: var(--azulzinho);
+    color: var(--branco);
+    width: fit-content;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+div h1 {
+    font-family: 'Hanken Grotesk';
+    margin-bottom: 20px;
+}
+
+div h3 {
+    font-family: 'Circe';
+    text-transform: uppercase;
+    color: var(--azulescuro);
+    font-weight: bold;
+}

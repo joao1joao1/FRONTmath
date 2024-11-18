@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjaclaro: #FFF1D6;
+    --laranjaclaro2: #FFD67C;
+    --branco: #fff;
+}
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('../../fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('../../fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('../../fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('../../fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--laranjaclaro);
+    /* colocar azulquase escuro no body, testar no pc da sala do wesley, para ver tamanho do todo */
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--laranja);
+    max-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+}
+
+#navegacao nav {
+    background-color: var(--laranjaclaro);
+    padding: 8px 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+}
+
+#navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    color: var(--azulescuro);
+    font-family: 'Baron Neue';
+}
+
+
+#navegacao nav > a:hover{
+    color: var(--laranja);
+    transition: 0.5s;
+}
+
+body {
+    margin-top: 70px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.agaUm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.agaUm a{
+    margin: 0;
+}
+
+.agaUm > a > img{
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.agaUm h1{
+    font-family: 'Hanken Grotesk';
+    color: var(--azulescuro);
+    margin-left: 200px;
+    margin-right: 100px;
+    font-size: 60px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 60px;
+}
+
+#conteudo > img{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#conteudo > div > p {
+    font-family: 'Circe';
+    font-size: 24px;
+    margin-inline: 80px;
+    text-align: center;
+
+}
+
+#conteudo > div{
+    margin-block: 60px ;
+}
+
+#conteudo > div >  button {
+    justify-content: center;
+    width: 250px;
+    border: none;
+    height: 62px;
+    font-size: 18px;
+    background-color: var(--laranja);
+    color: var(--azulescuro);
+    margin-top: 3.8rem;
+    border-radius: 8px;
+    margin-left: 280px ;
+
+}
+
+#conteudo > div > button > a{
+    text-decoration: none;
+    font-family: 'Baron Neue';
+    color: var(--azulescuro);
+    font-size: 30px ;
+    font-weight: bold;
+}

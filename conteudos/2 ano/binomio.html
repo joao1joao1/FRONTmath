@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="binomio.css">
+    <script src="./binomio.js" defer type="module"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos2ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar">
+                </a>
+
+                <h1>BINÔMIO DE NEWTON</h1>
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>O binômio de Newton é um binômio qualquer elevado a um expoente natural. O nome é uma homenagem ao
+                    matemático Isaac Newton, que fez grandes contribuições para a Matemática, como o desenvolvimento de
+                    uma fórmula para calcular potências envolvendo binômios. <br> <br>
+                    Newton percebeu que, ao resolver potências do tipo (a + b) n, existe uma regularidade, tornando
+                    possível o desenvolvimento de um método para encontrar o polinômio que é solução dessa operação.
+                    Além do desenvolvimento do binômio em si, é possível também encontrar o termo geral de um binômio.
+                </p>
+
+
+                <div id="formula">
+                    <hr>
+                    <h2>FÓRMULA</h2>
+                    <hr>
+                    <p>
+                        Chamamos de binômio um polinômio que possui dois termos. Quando calculamos uma potência desse
+                        binômio, estamos calculando um binômio de Newton. O cálculo de uma potência de binômio é
+                        bastante comum em problemas da Física, Química e da própria Matemática, por isso é de grande
+                        importância compreender a fórmula desenvolvida por Newton. <br>
+                        Para entender a fórmula, calcularemos as potências de um binômio com expoentes menores. Quanto
+                        maior o expoente, mais difícil fica realizar esse cálculo. <br><br>
+                        É possível perceber que quanto maior for o expoente, maior será a solução do binômio de Newton
+                        e, por isso, torna-se conveniente utilizar a fórmula:
+                    </p>
+
+                    <img src="../../assets/imagens-conteudos/binomio-de-newton/formula.png" alt="fórmula"
+                        class="imgCenter">
+
+                    <h3>EXEMPLO</h3>
+                    <p>Calcule (a + 2) <br> Primeiro substituiremos na fórmula x = a, y = 2 e n = 4</p>
+                    <p class="resolucoes">(x+y)0 = 1 <br>
+                        (x + y)1 = x + y <br>
+                        (x + y)2 = (x+y) (x+y) = x² + 2xy + y² <br>
+                        (x+y)³ = (x+y) (x+y)² = (x+y) <br>(x² + 2xy + y²) = x³ + 3x²y + 3xy² +y³ <br>
+                    </p>
+                </div>
+
+                <p>Os coeficientes de cada termo são as combinações, conhecidas também como termos binomiais. Note que o
+                    expoente do primeiro termo, no caso a, começou em 4 no primeiro e foi decrescendo a cada termo. Já o
+                    expoente do segundo termo, no caso 2, começou em 0 e foi crescendo até chegar a 4.
+                    <br>Para calcular o coeficiente, utilizamos a fórmula da combinação:
+                </p>
+                <div id="formulas">
+                    <img src="../../assets/imagens-conteudos/binomio-de-newton/formula-coeficiente.png"
+                        alt="fórmula coeficiente" id="formulaUm">
+                    <img src="../../assets/imagens-conteudos/binomio-de-newton/substituicao-formula.png"
+                        alt="substituição na fórmula" id="formulaDois" </div>
+                </div>
+                <p>Calculando as combinações, temos que:</p>
+                <div id="combinacoes">
+                    <img src="../../assets/imagens-conteudos/binomio-de-newton/combinacoes.png" alt="combinações">
+
+                    <p>Substituindo na fórmula, encontramos o seguinte polinômio:
+                        <br> <br>
+                        (a+2)^4=1 · a^4 + 4 · a^3 · 2 + 6 · a^2 · 22 + 4 · a · 2^3 + 1 · 2^4
+                        <br> <br>
+                        Agora calcularemos as potências e as multiplicações:
+                        <br> <br>
+                        (a+2)^4=a^4 + 8a^3 + 6 · a^2 · 4 + 4 · a · 8 + 1 · 16 <br>
+                        (a+2)^4=a^4 + 8a^3 + 24a^2 + 32a + 16
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <div id="apoio">
+            <h3>Para melhorar seus estudos...</h3>
+            <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                playlist de vídeo aulas sobre este assunto:</p>
+
+            <div id="a">
+                <a href="#" id="laranja">
+                    Mapa <br>mental
+                </a>
+
+                <a href="#" id="azul">
+                    playlist de <br> videoaulas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/2 ano/exercicio2ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="./triangulopascal.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

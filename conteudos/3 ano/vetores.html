@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vetores.css">
+    <script type="module" src="./vetores.js" defer></script>
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos3ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar">
+                </a>
+                <h1>VETORES EM R</h1>
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>
+                    Existe uma estreita relação entre vetores no espaço R² e no espaço R³. Na verdade, o conceito de
+                    vetor geométrico nos espaços euclidianos é sempre realizado da mesma forma, o que difere são as
+                    aplicações mais ricas que existem em R³.
+                    <br>
+                    Definição: Um vetor (geométrico) no espaço R³
+                    <br>
+                    é uma classe de objetos matemáticos (segmentos de reta) que tem a mesma direção, mesmo sentido e
+                    mesma intensidade. Esta classe de equivalência de objetos com as mesmas características é
+                    representada por um segmento de reta desta família (representante).
+                </p>
+                <div id="introImg">
+                    <p>O representante escolhido, quase sempre é o vetor v cuja origem é (0,0,0) e extremidade é
+                        o terno ordenado (a,b,c)do espaço R³, razão pela qual denotamos este vetor por: v=(a,b,c).
+                        Se a origem do vetor não é a origem (0,0,0)∈R³, realizamos a diferença entre a extremidade e
+                        a origem do vetor. Por exemplo, se um vetor v tem origem no ponto (1,2,3) e extremidade no
+                        ponto (7,12,15), o vetor v=(6,10,12), pois:</p>
+                    <img src="../../assets/imagens-conteudos/vetores-em-r/vetores-em-r-definicao.png" alt="">
+
+                </div>
+                <span>v=(7,12,15)−(1,2,3)=(6,10,12)</span>
+                <p>Existe uma definição mais ampla do conceito de vetor (nem sempre geométrica) que envolve uma gama
+                    variada de objetos matemáticos como: matrizes, conjuntos, funções, soluções de equações
+                    diferenciais, etc.</p>
+            </div>
+
+            <div id="soma">
+                <hr>
+                <h2>SOMA DE VETORES</h2>
+                <hr>
+                <p>Se v=(v¹,v²,v³) e w=(w¹,w²,w³), definimos a soma dos vetores v e w, por:</p>
+                <span>v+w=(v¹+w¹,v²+w²,v³+w³)</span>
+            </div>
+
+            <div id="propriedades">
+                <hr>
+                <h2>PROPRIEDADES DAS SOMAS DOS VETORES</h2>
+                <hr>
+                <h3>
+                    Fecho:
+                </h3>
+                <p>Para quaisquer vetores u,v∈R³, a soma u+v está em R³.</p>
+                <h3>
+                    Comutativa:
+                </h3>
+                <p>Para quaisquer vetores u,v∈R³ | v+w=w+v.
+                    <br> <br>
+                    <strong>Associativa:</strong> Para quaisquer vetores $u,v,wR^3 : u+(v+w)=(u+v)+w.
+                    <br> <br>
+                    <strong>Elemento neutro:</strong> Existe um vetor θ=(0,0,0)∈R³  tal que para todo vetor u∈R³, se
+                    tem: θ+u=u.
+                    <br> <br>
+                    <strong>Elemento oposto:</strong> Para cada vetor v∈R³, existe um vetor or −v∈R³  tal que: v+(−v)=θ
+                </p>
+            </div>
+
+            <div id="aplicacao">
+                <hr>
+                <h2>APLICAÇÕES GEOMÉTRICAS</h2>
+                <hr>
+
+                <p>Ponto Médio de um segmento: Dado um segmento de reta, cujas extremidades são também as extremidades
+                    dos vetores v¹=(x¹,y¹,z¹)</p>
+                <div id="imgUm">
+                    <p>e v²=(x²,y²,z²), o ponto médio deste segmento é dado por
+                        m=(x,y,z) onde:</p>
+                    <img src="../../assets/imagens-conteudos/vetores-em-r/vetores-em-r-ponto-medio.png" alt="">
+                </div>
+
+                <div id="imgDois">
+                    <p>Centro de Gravidade de um triângulo: Consideremos os
+                        vértices de um triângulo, dados pelas extremidades dos
+                        vetores v¹=(x¹,y¹,z¹), v²=(x²,y²,z²) e v³=(x³,y³,z³). O centro de
+                        gravidade deste triângulo é dado pelo vetor g=(x,y,z) onde</p>
+                    <img src="../../assets/imagens-conteudos/vetores-em-r/vetores-em-r-centro-de-gravidade.png" alt=""
+                        class="borda">
+                </div>
+            </div>
+
+            <div id="diferenca">
+                <hr>
+                <h2>DIFERENÇA DE VETORES</h2>
+                <hr>
+
+                <p>Se v=(v¹,v²,v³) e w=(w¹,w²,w²) são vetores em R³, definimos a diferença entre v e w, por:</p>
+            </div>
+
+            <div id="produto">
+                <p>Se k é um número real e v=(a,b,c)um vetor em R³, definimos o produto de k por v, como:</p>
+                <p class="resolucoes">kv=(ka,kb,kc)</p>
+            </div>
+
+            <div id="propriedade">
+                <hr>
+                <h2>PROPRIEDADE DO PRODUTO DE ESCALAR POR VETOR</h2>
+                <hr>
+
+                <p>Quaisquer que sejam os escalares a,b,c e os vetores v e w em R³, temos</p>
+                <p class="resolucoes">
+                    E1: ¹v=v <br>
+                    E2: (ab)v=a(bv)=b(av) <br>
+                    E3: Se av=bv e v≠θ então a=b <br>
+                    E4: k(v+w)=kv+kw <br>
+                    E5: (a+b)v=av+bv</p>
+            </div>
+
+            <div id="modulo">
+                <hr>
+                <h2>MÓDULO DE UM VETOR POR VETORES UNITÁRIOS</h2>
+                <hr>
+                <div id="moduloDef">
+                    <p>O módulo ou comprimento do vetor v=(x,y,z) é definido por:</p>
+                    <img src="../../assets/imagens-conteudos/vetores-em-r/comprimento-do-vetor.png" alt=""
+                        class="borda">
+                </div>
+                <p>
+                    Um vetor unitário é o que tem o módulo (comprimento) igual a 1.
+                    <br>
+                    Exemplo: Existe um importante conjunto com três vetores unitários de R³:
+                </p>
+                <p class="resolucoes">i=(1,0,0),j=(0,1,0),k=(0,0,1)</p>
+                <p>Estes três vetores formam a base canônica para o espaço R³, o que significa que todo vetor v=(a,b,c)
+                    do espaço R3 pode ser escrito como combinação linear dos vetores i, j e k, assim:</p>
+                <p class="resolucoes">v=(a,b,c)=ai+bj+ck</p>
+                <p>Para obter um versor de v, isto é, um vetor unitário com a mesma direção e sentido que um vetor v,
+                    basta dividir o vetor v pelo seu módulo |v|, isto é:</p>
+                <div class="imgCenter"><img src="../../assets/imagens-conteudos/vetores-em-r/versor-de-v.png" alt=""
+                        class="borda"> </div>
+                <p>Para construir um vetor w paralelo a um vetor v, basta multiplicar um escalar k pelo vetor v, isto é:
+                </p>
+                <p class="resolucoes"> w= kv</p>
+
+
+                <p>As três projeções ortogonais do vetor v=(a,b,c)sobre os planos X=0, Y=0 e Z=0, são respectivamente,
+                    dadas
+                    por:</p>
+                <p class="resolucoes">vx=(0,b,c),vy=(a,0,c),vz=(a,b,0)</span>
+                <div class="imgCenter"><img
+                        src="../../assets/imagens-conteudos/vetores-em-r/projecoes-ortogonais-do-vetor-v.png" alt=""
+                        class="borda"> </div>
+            </div>
+        </main>
+
+        <div id="apoio">
+            <h3>Para melhorar seus estudos...</h3>
+            <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                playlist de vídeo aulas sobre este assunto:</p>
+
+            <div id="a">
+                <a href="#" id="laranja">
+                    Mapa <br>mental
+                </a>
+
+                <a href="#" id="azul">
+                    playlist de <br> videoaulas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/3 ano/exercicio3ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

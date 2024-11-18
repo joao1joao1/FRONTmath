@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --color-text: #000;
+    --azul-h1: #004AAD;
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjamedio: #FFC546;
+    --laranjaclaro: #FFF1D6;
+    --laranjaclaro2: #FFD67C;
+    --branco: #fff;
+}
+
+.escuro{
+    --laranjaclaro: #111A3E;
+    --azul-h1: #F68F06;
+    --azulclaro: #FFF1D6;
+    --color-text: #fff;
+    --azulescuro: #FFC546;
+}
+
+.fundoEscuro{
+    --laranjaclaro: #111A3E;
+}
+
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('../../fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('../../fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('../../fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('../../fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--laranjaclaro);
+    /* colocar azulquase escuro no body, testar no pc da sala do wesley, para ver tamanho do todo */
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--laranjaclaro);
+}
+
+header {
+    background-color: var(--laranja);
+    max-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+}
+
+#navegacao nav {
+    background-color: #FFF1D6;
+    padding: 8px 45px;
+    border-radius: 25px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+}
+
+#navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    color: var(--azulescuro);
+    font-family: 'Baron Neue';
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#navegacao nav > a:hover{
+    color: var(--laranja);
+    transition: 0.5s;
+}
+
+#headerDois{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#headerDois button{
+    background: none;
+    border: none;
+    max-width: 150px;
+}
+
+#headerDois button img{
+    max-width: 100px;
+}
+
+main {
+    margin-top: 5.375rem;
+    padding-inline: 50px;
+    background-color: var(--laranjaclaro);
+}
+
+main a img{
+    max-width: 170px;
+}
+
+#headerDois h1{
+    font-family: Lemon Milk;
+    font-size: 72px;
+    color: var(--azul-h1);
+    font-weight: bolder;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.hrHeader{
+    border: 3.5px solid var(--laranja);
+    background: var(--laranja);
+    color: var(--laranja);
+}
+
+hr{
+    border: 0; 
+    height: 2px; 
+    background-color: var(--azulescuro);
+    border-top: 2px var(--azulescuro);
+}
+
+h2{
+    font-family: 'Hanken Grotesk';
+
+}
+
+p{
+    font-family: 'Circe';
+    font-size: 20px;
+    padding-inline: 40px;
+    margin: 20px;
+    color: var(--color-text);
+}
+
+span{
+    font-size: 20px;
+    font-family: 'Circe';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+}
+
+h2{
+    color: var(--azulescuro);
+    margin-block: 15px;
+    font-size: 40px;
+}
+h3{
+    color: var(--azulclaro);
+    font-family: 'Circe';
+    font-size: 20px;
+}
+
+.resolucoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azulclaro);
+    font-family: 'Circe';
+    font-size: 20px;
+    text-align: center;
+}
+
+.imgCenter{
+    size: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-block: 20px;
+    padding-bottom: 30px;
+}
+
+#formulas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 100px;
+}
+
+#combinacoes{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 50px;
+    padding-bottom: 100px;
+}
+
+
+#apoio {
+    background-color: var(--laranjamedio);
+    padding: 20px;
+    margin: 20px 150px;
+    border-radius: 10px;
+    width: 1000px;
+    font-family: 'Circe';
+}
+
+#apoio h3 {
+    color: var(--azulclaro);
+    font-size: 30px;
+    max-height: 40px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#apoio p {
+    font-family: 'Circe';
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+
+#apoio a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 30px;
+    font-family: 'Baron Neue';
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    height: 200;
+}
+
+#a {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+#laranja {
+    color: var(--azulescuro);
+    background-color: var(--laranja);
+}
+
+#azul {
+    color: var(--laranja);
+    background-color: var(--azulescuro);
+}
+
+#apoio p {
+    margin-bottom: 10px;
+}
+
+#botoes{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+#botaoExercicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azulescuro);
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 350px;
+    width: 320px;
+    color: var(--laranja);
+    text-decoration: none;
+    font-family: 'Baron Neue';
+    font-size: 40px;
+}
+
+#botaoProximo{
+    margin-right: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--laranja);
+    height: 70px;
+    border-radius: 15px;
+    width: 320px;
+    color: var(--azulescuro);
+    text-decoration: none;
+    font-family: 'Baron Neue';
+    font-size: 40px;
+}
+
+#botaoExercicios:hover{
+    transition: 300ms;
+    color: var(--laranjamedio);
+    background: var(--azulclaro);
+}
+
+#botaoProximo:hover {
+    transition: 300ms;
+    color: var(--azulescuro);
+    background: var(--laranjaclaro2);
+}

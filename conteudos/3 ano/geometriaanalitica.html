@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="geometriaanalitica.css">
+    <script src="./geometrianalitica.js" defer type="module"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos3ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar">
+                </a>
+                <h1>GEOMETRIA ANALÍTICA</h1>
+                <hr>
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>
+                    A Geometria Analítica estuda elementos geométricos em um sistema de
+                    coordenadas num plano ou espaço. Estes objetos geométricos são deter-
+                    minados por sua localização e posição em relação a pontos e eixos deste
+                    sistema de orientação. <br> <br>
+                    Desde povos da antiguidade, como egípcios e romanos, a ideia de coor-
+                    denadas já aparece na história. Mas é no século XVII, com os trabalhos
+                    de René Descartes e Pierre de Fermat que este campo da Matemática se
+                    sistematiza.</p> <br>
+                <img src="../../assets/imagens-conteudos/geometria-analitica/definicao-geometria-analitica.png"
+                    alt="imagem de gráfico de função quadrática">
+            </div>
+
+            <div id="sistema">
+                <hr>
+                <h2>SISTEMA CARTESIANO ORTOGONAL</h2>
+                <hr>
+                <p>O Sistema Cartesiano Ortogonal é uma base de referência para localização de coordenadas. É
+                    constituído, em um plano, por dois eixos perpendiculares entre si. Ele é dividido em quatro
+                    quadrantes, sendo organizados da seguinte forma:</p>
+                <div id="imgQuadrantes">
+                    <img src="../../assets/imagens-conteudos/geometria-analitica/sistema-cartesiano-ortogonal.png"
+                        alt="">
+                    <ul>
+                        <li>A origem O(0,0) deste sistema é a intersecção destes eixos.</li>
+                        <li>O eixo x é o das abscissas.</li>
+                        <li>O eixo y é o das ordenadas.</li>
+                        <li>Convenciona-se a orientação anti-horária dos quatro quadrantes.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="parOrdenado">
+                <hr>
+                <h2>PAR ORDENADO</h2>
+                <hr>
+                <p>Um ponto qualquer no plano possui a coordenada P(x, y).</p>
+                <div id="imgPar">
+                    <img src="../../assets/imagens-conteudos/geometria-analitica/par-ordenado.png" alt="">
+                    <p>x é a abscissa do ponto P e constitui a distância entre sua projeção ortogonal no eixo x até a
+                        origem. <br>
+                        y é a ordenada do ponto P e constitui a distância entre sua projeção ortogonal no eixo y até a
+                        origem.</p>
+                </div>
+            </div>
+
+            <div id="distancia">
+                <hr>
+                <h2>DISTÂNCIA ENTRE DOIS PONTOS</h2>
+                <hr>
+
+                <p>A distância entre dois pontos no plano cartesiano é o comprimento do segmento que une estes dois
+                    pontos.
+                    <br>
+                    Fórmula da distância entre dois pontos retos B(Xy * Yb)quaisquer.
+                </p>
+                <img src="../../assets/imagens-conteudos/geometria-analitica/distancia-entre-dois-pontos.png" alt=""
+                    class="imgCenter">
+            </div>
+
+            <div id="coordenadas">
+                <hr>
+                <h2>COORDENADAS DO PONTO MÉDIO</h2>
+                <hr>
+                <p>Ponto médio é o ponto que divide um segmento em duas partes de mesma medida.
+                    <br>
+                    Sendo M(Xm * Ym) o ponto médio de um segmento AB pilha , suas coordenadas são as médias aritméticas
+                    das abscissas e ordenadas.
+                </p>
+                <div id="formulasCoordenadas">
+                    <img src="../../assets/imagens-conteudos/geometria-analitica/coordenadas-ponto-medio-x.png" alt="">
+                    <img src="../../assets/imagens-conteudos/geometria-analitica/coordenadas-ponto-medio-y.png" alt="">
+                </div>
+            </div>
+
+            <div id="condicao">
+                <hr>
+                <h2>CONDIÇÃO DE ALINHAMENTO DE 3 PONTOS</h2>
+                <hr>
+                <p>Dados os pontos: A(Xa * Yb), B(Xb * Yb) * C(Xc * Yc)
+                    <br>
+                    Estes três pontos estarão alinhados se o determinante da seguinte matriz for igual a zero
+                </p>
+                <img src="../../assets/imagens-conteudos/geometria-analitica/condicao-de-alinhamentos-de-3-pontos.png"
+                    alt="" class="imgCenter">
+            </div>
+
+            <div id="coeficienteAngular">
+                <hr>
+                <h2>COEFICIENTE ANGULAR DE UMA RETA</h2>
+                <hr>
+                <p>O coeficiente angular reto m de uma reta é a tangente de sua inclinação alfa em relação ao eixo x.
+                </p>
+                <div id="imgCoeficiente">
+                    <img src="../../assets/imagens-conteudos/geometria-analitica/coeficiente-angular-reto-m-graficos.png"
+                        alt="">
+                    <img src="../../assets/imagens-conteudos/geometria-analitica/coeficiente-angular-reto-m-formula.png"
+                        alt="">
+                </div>
+            </div>
+            <p>Para obter o coeficiente angular a partir de dois pontos:</p>
+            <img src="../../assets/imagens-conteudos/geometria-analitica/coeficiente-angular-dois pontos.png" alt=""
+                class="imgCenter">
+            <p>Se m > 0 a reta é ascendente, caso contrário, se m < 0, a reta é decrescente.</p>
+
+                    <div id="equacaoReta">
+                        <hr>
+                        <h2>EQUAÇÃO GERAL DA RETA</h2>
+                        <hr>
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/equacao-geral-da-reta.png" alt=""
+                            class="imgCenter">
+                        <p>Onde a, b e c são números reais constantes e, a e b não são simultaneamente nulos.
+                            <strong>Onde a, b e c são números reais constantes e, a e b não são simultaneamente
+                                nulos.</strong>
+                            Dado um ponto A(Xo * Yo) e o coeficiente angular M.
+                            <br>
+                            A equação da reta será:
+                        </p>
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/equacao-da-reta-exemplo.png" alt=""
+                            class="imgCenter">
+                    </div>
+
+                    <div id="reducao">
+                        <hr>
+                        <h2>FORMA REDUZIDA DA EQUAÇÃO</h2>
+                        <hr>
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/forma-reduzida-da-equacao.png"
+                            alt="" class="imgCenter">
+                        <p>Onde:
+                            <br>
+                            m é o coeficiente angular;
+                            <br>
+                            n é o coeficiente linear.
+                            <br>
+                            n é ordenada em que a reta intersecta o eixo y.
+                        </p>
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/n-ordenada- reta-eixo-y-grafico.png"
+                            alt="" class="imgCenter">
+                        <p>Posição relativa entre duas retas paralelas em um plano
+                            <br>
+                            Duas retas distintas são paralelas quando seus coeficientes angulares são iguais.
+                            <br>
+                            Se uma reta r possui coeficiente angular reto m com reto r subscrito, e uma reta s possui
+                            coeficiente angular reto m com reto s subscrito, estas são paralelas quando:
+                        </p>
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/mr-igual-ms.png" alt=""
+                            class="imgCenter">
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/grafico-paralelas-mr-e-ms.png"
+                            alt="" class="imgCenter">
+                        <p>Para isto, suas inclinações devem ser iguais</p>
+                        <img src="../../assets/imagens-conteudos/geometria-analitica/inclinacoes-iguais.png" alt=""
+                            class="imgCenter">
+                        <p>As tangentes são iguais quando os ângulos são iguais.</p>
+                    </div>
+        </main>
+        <div id="apoio">
+            <h3>Para melhorar seus estudos...</h3>
+            <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                playlist de vídeo aulas sobre este assunto:</p>
+
+            <div id="a">
+                <a href="#" id="laranja">
+                    Mapa <br>mental
+                </a>
+
+                <a href="#" id="azul">
+                    playlist de <br> videoaulas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/3 ano/exercicio3ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="./expressoesalgebricas.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

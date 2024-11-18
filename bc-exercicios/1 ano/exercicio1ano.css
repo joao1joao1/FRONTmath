@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --azulescuro: #0B3D80;
+    --azulclaro: #4285F3;
+    --azulzinho: #79BFFF;
+    --laranja: #F68F06;
+    --laranjaclaro: #FFF1D6;
+    --laranjaclaro2: #FFD67C;
+    --branco: #fff;
+    --branco2: #FFF9ED;
+    --verde-certo: #2FF62B;
+    --vermelho-errado:#FF0000;
+}
+
+@font-face {
+    font-family: Hanken Grotesk; /* Nome que você usará para aplicar a fonte */
+    src: url('../../fontes/Hanken_Grotesk/static/HankenGrotesk-Bold.ttf'); /* Caminho e formato da fonte principal */
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('../../fontes/baron_neue/Baron\ Neue\ Black.otf');
+}
+
+@font-face {
+    font-family: Circe;
+    src: url('../../fontes/circe-cufonfonts/CRC55.otf');
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url('../../fontes/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--laranjaclaro2);
+    /* colocar azulquase escuro no body, testar no pc da sala do wesley, para ver tamanho do todo */
+}
+
+#containerGlobal {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--laranja);
+    max-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+}
+
+#navegacao nav {
+    background-color: var(--laranjaclaro);
+    padding: 8px 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+}
+
+#navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 1.2rem;
+    color: var(--azulescuro);
+    font-family: 'Baron Neue';
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#navegacao nav > a:hover{
+    color: var(--laranja);
+    transition: 0.5s;
+}
+
+main {
+    margin-top: 5.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > a {
+    margin-right: 1200px;
+    width: 200px;
+}
+
+main img {
+    width: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: -130px;
+    color: var(--azulescuro);
+    margin-bottom: 70px;
+    font-size: 58px;
+    font-family: 'Hanken Grotesk';
+    font-weight: 800;
+}
+
+#seta-direita {
+    width: 100px;
+    background: none;
+    border: none;
+    margin-left: 150vh;
+    margin-top: 50px;
+}
+
+#seta-esquerda {
+    width: 100px;
+    background: none;
+    border: none;
+    margin-right: 300px;
+    margin-top: -90px;
+}
+
+#seta-direita img {
+    width: 100px;
+    margin-left: 100px;
+    transform: scaleX(-1);
+}
+
+#seta-esquerda img {
+    width: 100px;
+}
+
+#questao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px;
+    padding: 50px;
+    height: 350px;
+    border-radius: 20px;
+    font-family: 'Circe';
+    background-color: var(--branco2);
+    margin-inline: 180px;
+}
+
+#alternativas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#alternativas button {
+    margin-bottom: 5px;
+    background: none;
+    border: none;
+}
+
+#botoes{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 150px;
+}
+
+#botaoResolucao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: var(--azulescuro);
+    height: 70px;
+    border-radius: 15px;
+    width: 320px;
+    color: var(--laranja);
+    text-decoration: none;
+    font-family: 'Baron Neue';
+    font-size: 40px;
+}
+
+#botaoProximo{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azulzinho);
+    height: 70px;
+    border-radius: 15px;
+    width: 320px;
+    color: var(--laranjaclaro);
+    text-decoration: none;
+    font-family: 'Baron Neue';
+    font-size: 40px;
+}
+
+.certo {
+    background-color: green; /* verde */
+  }
+  
+  .errado {
+    background-color: red; /* vermelho */
+  }

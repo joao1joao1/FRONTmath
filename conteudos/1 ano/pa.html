@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pa.css">
+    <script src="./pa.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos1ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar">
+                </a>
+                <h1>PROGRESSÃO ARITMÉTICA</h1>
+
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>
+                    Representa uma sequência numérica em que a diferença entre um termo
+                    e o seu antecessor possui o mesmo valor. A diferença comum entre esses
+                    termos é dada por uma constante, “r”, chamada de razão da progressão arit-
+                    mética.
+                    Na PA (2, 4, 6, 8, 10...) cada número representa um termo e a razão da
+                    progressão aritmética é 2, pois 4 - 2 = 2, 6 - 4 = 2 e assim por diante. Essa
+                    sucessão, representada pelas reticências, indica que essa é uma PA infinita.
+                    Já a sequência (1,6,11,16,21), cuja razão da progressão aritmética é 5, é ca-
+                    racterizada como uma PA finita, pois o número de termos é limitado e não existem reticências que
+                    indiquem a continuidade deles.</p>
+                <img src="../../assets/imagens-conteudos/progressao-aritmetico/progressao-aritmetica-introducao.png"
+                    alt="imagem de pa">
+            </div>
+
+            <div id="gauss">
+                <hr>
+                <h2>PRÍNCIPE GAUSS E A PROGRESSÃO ARITMÉTICA</h2>
+                <hr>
+
+                <p>O princípio da progressão aritmética parece fácil, mas você sabe quem foi o pioneiro desse fundamento
+                    lógico? Segundo a história, Carl Friedrich Gauss com apenas dez anos de idade encontrou a fórmula do
+                    somatório dos termos da PA, representado por:</p>
+                <div id="somaPa">
+                    <img src="../../assets/imagens-conteudos/progressao-aritmetico/formula-somatoria-pa.png"
+                        alt="formula soma pa">
+                    <p>Onde: <br>
+                        <strong class="azulBold">Sn:</strong> soma dos termos <br>
+                        <strong class="azulBold">a1:</strong> primeiro termo <br>
+                        <strong class="azulBold">an:</strong> termo da enésima posição <br>
+                        <strong class="azulBold">n:</strong> posição que o termo ocupa
+                    </p>
+                </div>
+                <p>Na PA infinita podemos observar que a soma do primeiro e do último termo é igual à soma do segundo
+                    termo com o penúltimo termo e assim ordenadamente. E somar cada dupla de termos, encontramos sempre
+                    o mesmo valor:</p>
+                <p class="resolucoes">Sn = a1 + a2 + a3 + … + an-2 + an-1 + an, <br>
+                    a1 + an= a2 + an-1 = a3 + an-2</p>
+                <p>Agora vamos encontrar soma dos 100 primeiros termos da PA (1,2,3,4,5...) utilizando a fórmula do
+                    somatório:</p>
+                <img src="../../assets/imagens-conteudos/progressao-aritmetico/exemplo-pa.png" alt="" class="imgCenter">
+            </div>
+            <div id="tiposPa">
+                <hr>
+                <h2> TIPOS DE P.A</h2>
+                <hr>
+
+                <h3>P.A Crescente</h3>
+                <p>Uma PA é dita crescente se cada termo, a partir do segundo, é maior que o termo anterior. Nesse caso
+                    a razão é sempre maior que zero.  Exemplo:</p>
+                <span>(-1, 0, 1, 2, 3...) r = 1</span>
+
+                <h3>P.A Decrescente</h3>
+                <p>Uma PA decrescente cada termo, a partir do segundo, é menor que o termo anterior. Nesse caso a razão
+                    é sempre menor que zero. Exemplo:</p>
+                <span>(-3, -6, -9, -12 …) r = -3</span>
+
+                <h3>P.A Constante</h3>
+                <p>Uma PA é constante ou estacionária quando todos os termos são iguais. Nesse caso a razão é sempre
+                    igual a zero. Exemplo:</p>
+                <span>(1,1,1,1,1...) r = 0</span>
+            </div>
+
+            <div id="propriedades">
+                <hr>
+                <h2>PROPRIEDADES</h2>
+                <hr>
+                <br>
+
+                <div id="propriedadeUm">
+                    <p><strong>1ª Propriedade:</strong> em uma PA finita, a soma dos dois termos equidistantes é igual à
+                        soma dos extremos.</p>
+                    <img src="../../assets/imagens-conteudos/progressao-aritmetico/primeira-propriedade.png" alt="">
+                </div>
+
+                <div id="propriedadeDois">
+                    <img src="../../assets/imagens-conteudos/progressao-aritmetico/segunda-propriedade.png" alt="">
+                    <p><strong>2ª Propriedade:</strong> tendo em vista os três termos consecutivos de uma PA, o termo
+                        médio é igual a média aritmética dos outros dois termos.</p>
+                </div>
+
+                <div id="propriedadeTres">
+                    <p><strong>3ª Propriedade:</strong> em uma PA finita e ímpar, o termo do meio será igual a média
+                        aritmética do primeiro termo com o último termo.</p>
+                    <img src="../../assets/imagens-conteudos/progressao-aritmetico/terceira-propriedade.png" alt="">
+                </div>
+            </div>
+        </main>
+
+
+        <div id="apoio">
+            <h3>Para melhorar seus estudos...</h3>
+            <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                playlist de vídeo aulas sobre este assunto:</p>
+
+            <div id="a">
+                <a href="#" id="laranja">
+                    Mapa <br>mental
+                </a>
+
+                <a href="#" id="azul">
+                    playlist de <br> videoaulas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/1 ano/exercicio1ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="./pg.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+
+    </div>
+</body>
+
+</html>

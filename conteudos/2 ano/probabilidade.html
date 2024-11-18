@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="probabilidade.css">
+    <script src="./probabilidade.js" defer type="module"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <div id="headerDois">
+                <a href="./conteudos2ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar">
+                </a>
+
+                <h1>Probabilidade</h1>
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>Probabilidade é um conceito estatístico relacionado a situações aleatórias.
+                    <br>A probabilidade de um evento é indicada por um número entre 0 e 1, sendo
+                    0 um evento impossível e 1 um evento certo. O cálculo da probabilidade de
+                    um evento é realizado pela razão entre o número de casos favoráveis ao e-
+                    vento e o número de casos possíveis.
+                </p>
+
+                <img src="../../assets/imagens-conteudos/probabilidade/probabilidade-definicao (1).png"
+                    alt="definição de probabilidade">
+            </div>
+            <h3>Resumo sobre Probabilidade</h3>
+
+            <ul>
+                <li>O estudo da probabilidade é a análise de experimentos aleatórios.</li>
+                <li>Espaço amostral é o conjunto formado por todos os resultados possíveis de um experimento
+                    aleatório.</li>
+                <li>Se todos os resultados têm a mesma chance de ocorrer, o espaço amostral é chamado de
+                    equiprovável.</li>
+                <li>Evento é um conjunto particular de resultados de um experimento aleatório.</li>
+                <li>A probabilidade é sempre um número de 0 a 1.</li>
+                <li>A probabilidade de um evento A ocorrer é a razão entre o número de elementos do conjunto A e o
+                    número de elementos do espaço amostral:</li>
+
+                <img src="../../assets/imagens-conteudos/probabilidade/formula-probabilidade.png"
+                    alt="fórmula probabilidade" class="imgCenter">
+            </ul>
+
+
+            <div id="oque">
+                <hr>
+                <h2>O QUE É</h2>
+                <hr>
+
+                <p>Probabilidade é a chance de obter determinado resultado em um experimento. Fundamentos
+                    probabilísticos são utilizados na análise de experimentos e situações aleatórias e podem contribuir
+                    para tomadas de decisões em diferentes contextos.
+                    <br>Para desenvolver o estudo da probabilidade, precisamos compreender alguns conceitos básicos.
+                </p>
+
+                <h3>Ponto amostral na Probabilidade</h3>
+                <div id="dado">
+                    <p>Considere uma situação ou experimento que pode produzir diferentes resultados cada
+                        vez que ocorrer (ou seja, um experimento aleatório). Cada resultado particular é chamado
+                        de ponto amostral.
+                        <br><strong>Exemplo:</strong>A face superior resultante do lançamento de um dado é um
+                        experimento
+                        alea-
+                        tório. Cada face é um ponto amostral.
+                    </p>
+                    <img src="../../assets/imagens-conteudos/probabilidade/probabilidade-dados.png"
+                        alt="dados probabilidade">
+                </div>
+                <h3>Espaço amostral na Probabilidade</h3>
+                <p>Espaço amostral é o conjunto de todos os possíveis resultados de um experimento. Esse conjunto é
+                    frequentemente expresso pela letra grega maiúscula Ômega: Ω .
+                    <br><strong>Exemplo:</strong> A face superior resultante do lançamento de um dado de 6 faces pode
+                    ser o número 1, 2, 3, 4, 5 ou 6. Logo, nesse experimento, Ω= {1,2,3,4,5,6}.
+                </p>
+
+                <h3>Espaço amostral Equiparável</h3>
+                <p>Um espaço amostral é chamado de equiprovável se todos os resultados possuem a mesma chance de
+                    acontecerem.
+                    <br><strong>Exemplo:</strong>Ao lançar um dado comum (também chamado de “não viciado”) de 6 faces, a
+                    chance de obter, na face superior, o número 1 é a mesma de obter o número 2, que é a mesma de obter
+                    o número 3 e assim por diante. Portanto, o espaço amostral Ω={1,2,3,4,5,6} é equiprovável."
+                </p>
+            </div>
+
+            <div id="tipos">
+                <hr>
+                <h2>TIPOS</h2>
+                <hr>
+
+                <p>Existem diferentes concepções acerca do estudo de probabilidade.
+                    <br>A <strong>probabilidade clássica</strong> supõe um espaço amostral equiprovável para o cálculo
+                    de probabilidades.
+                    <br>A <strong>probabilidade empírica</strong> (ou frequentista) considera que o cálculo de
+                    probabilidade deve ser realizado a partir de repetições do experimento e análise dos resultados.
+                    <br>A <strong>probabilidade subjetiva</strong> se baseia em ideias, crenças e julgamentos pessoais.
+                    Consequentemente, o cálculo de probabilidade em determinado contexto pode variar de uma pessoa para
+                    outra.
+
+                    <br>Observação: Nos exemplos deste texto, trataremos de situações relacionadas à probabilidade
+                    clássica.
+                </p>
+            </div>
+
+            <div id="evento">
+                <hr>
+                <h2>EVENTO</h2>
+                <hr>
+
+                <p>Um evento é um conjunto específico de resultados e geralmente é representado por uma letra maiúscula.
+                    Considere o experimento de lançar um dado de 6 faces e observar a face superior. Exemplos de eventos
+                    são:
+                </p>
+
+                <p class="resolucoes">
+                    <strong>A</strong> = Obter um número ímpar.
+                    <br><strong>B</strong> = Obter um número par.
+                    <br><strong>C</strong> = {1,2} (Obter o número 1 ou o número 2.).
+                    <br><strong>D</strong> = {1, 2, 3, 4, 5, 6} (Obter um número de 1 a 6.).
+                    <br><strong>E</strong> = {7} (Obter o número 7).
+                </p>
+
+                <p>Note que os eventos A, B, C e D são subconjuntos do espaço amostral (o evento D, inclusive, é igual
+                    ao espaço amostral).
+                    <br>Assim, os eventos A, B e C são eventos possíveis e o evento D é um evento certo, pois com
+                    certeza a face obtida será um número de 1 a 6. Já o evento E é chamado de evento impossível, pois
+                    não podemos obter o número 7 ao lançar um dado de 6 faces.
+                </p>
+            </div>
+
+            <div id="formula">
+                <hr>
+                <h2>FÓRMULA</h2>
+                <hr>
+
+                <p>Agora que conhecemos esses conceitos fundamentais, podemos seguir com o cálculo básico de
+                    probabilidade. Vamos representar a probabilidade de um evento A acontecer por P(A).
+
+                    <br>A probabilidade de um evento A ocorrer a partir de um experimento é a razão entre o número de
+                    casos favoráveis a esse evento e o número total de casos possíveis. Isso significa, respectivamente,
+                    a razão entre o número de elementos do conjunto A e o número de elementos do espaço amostral do
+                    experimento.
+                </p>
+
+                <div class="explicacao-formula">
+                    <img src="../../assets/imagens-conteudos/probabilidade/formula-probabilidade.png" alt="fórmula">
+
+                    <ul>
+                        <li><strong>P(A) →</strong>probabilidade do evento A ocorrer.</li>
+                        <li><strong>n(A) →</strong>número de elementos do conjunto A, ou seja, a quantidade pontos
+                            amostrais favoráveis à ocorrência de A.</li>
+                        <li><strong>n(Ω ) →</strong>número de elementos do espaço amostral.</li>
+                    </ul>
+                </div>
+
+                <div id="calcular">
+                    <hr>
+                    <h2>COMO CALCULAR</h2>
+                    <hr>
+
+                    <p>Para calcular a probabilidade de um evento, devemos determinar o número de casos favoráveis à sua
+                        ocorrência e o número de casos possíveis para aplicar a fórmula.</p>
+
+                    <img src="../../assets/imagens-conteudos/probabilidade/aplicacao-probabilidade.png"
+                        alt="aplicação fórmula" class="imgCenter">
+
+                    <p><strong>Exemplo:</strong>Qual a probabilidade de obter a face “cara” no lançamento de uma moeda?
+                        <br>Seja A o evento de obter a face “cara” no lançamento de um moeda. Há dois possíveis
+                        resultados para o lançamento de moeda: “cara” ou “coroa”. Assim, Ω= {cara,coroa}, ou seja, o
+                        número de elementos do espaço amostral é 2. Ainda, o número de casos favoráveis ao evento A é 1,
+                        que é o resultado “cara”.
+                    </p>
+                </div>
+
+        </main>
+    </div>
+
+    <div id="apoio">
+        <h3>Para melhorar seus estudos...</h3>
+        <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+            playlist de vídeo aulas sobre este assunto:</p>
+
+        <div id="a">
+            <a href="#" id="laranja">
+                Mapa <br>mental
+            </a>
+
+            <a href="#" id="azul">
+                playlist de <br> videoaulas
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div id="botoes">
+        <a href="../../bc-exercicios/2 ano/exercicio2ano.html" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="./binomio.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+    </div>
+</body>
+
+</html>

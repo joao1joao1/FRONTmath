@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pg.css">
+    <script src="./pg.js" defer type="module"></script>
+</head>
+
+<body class="fundoEscuro">
+    <div id="containerGlobal">
+        <header>
+            <a href="../../index.html">
+                <img src="../../assets/mathtech.png" alt="imagem da logo" style="width: 180px; height: 170px;"
+                    id="logo">
+            </a>
+            <section id="navegacao">
+                <nav>
+                    <a href="../../index.html#sobreConteudo">conteúdo</a>
+                    <a href="../../index.html#aTv">atividades</a>
+                    <a href="../../index.html#materialHome">materiais</a>
+                    <a href="../../index.html#quemsomos">quem somos</a>
+                    <a href="../../index.html#faleconosco">suporte</a>
+                </nav>
+            </section>
+        </header>
+
+        <main class="escuro">
+            <div id="headerDois">
+                <a href="./conteudos1ano.html">
+                    <img src="../../assets/sair seta.png" alt="seta de voltar" style="max-width: 170px;">
+                </a>
+
+                <h1>PROGRESSÃO GEOMÉTRICA</h1>
+
+                <button class="botaoTema">
+                    <img src="../../../imagens mathtech/icon-sun.png" alt="">
+                </button>
+            </div>
+            <hr class="hrHeader">
+
+            <div id="intro">
+                <p>Progressão Geométrica (PG) é uma continuidade numérica em que a divisão de um termo com o seu
+                    anterior, exceto o primeiro, resultará em um único valor, a chamada razão (q), ou seja:</p>
+                <p>
+                    <strong class="azulBold">PG: (a1, a2, a3, a4, ..., an)</strong> , sendo q = (a2/a1 = a3/a2 =
+                    a4/a3,...)
+                </p>
+                <p>A multiplicação da própria razão (q) também define uma sequência numérica da progressão. Entenda nos
+                    exemplos:</p>
+                <span>PG: (5, 25, 125, 625, …)</span>
+                <p>
+                    Nesta progressão, o valor que determina seu consecutivo é o cinco, ou seja, a sequência é uma PG de
+                    razão igual a cinco (q = 5), pois 5 x 5 = 25; 25 x 5 = 125; 125 x 5 = 625 e assim sucessivamente.
+                    <br> <br>
+                    Já na PG: (2,4,8,16,32,64, ...) a razão é 2 (q =2), pois 2 x 2 = 4; 4 x 2= 8; 8 x 2 =16 e assim
+                    consecutivamente. A razão de uma progressão geométrica é composta por
+                    valores constantes e racionais (positivos, negativos e frações), com exceção do zero. <br> <br>
+                    Existe outro tipo de série numérica, a progressão aritmética. Nessa categoria, cada termo é dado
+                    pela soma do número anterior, resultando na razão (r). <br>
+                </p>
+            </div>
+            <div id="tipos">
+                <hr>
+                <h2>TIPOS DE P.G</h2>
+                <hr>
+                <p>As progressões geométricas são classificadas de acordo com o valor da razão. Elas se dividem em
+                    crescentes, decrescentes, oscilantes e permanentes.</p>
+                <h3>PG Crescente</h3>
+                <p>Nesse tipo de progressão geométrica a razão é maior que zero e feita por números crescentes:</p>
+                <span>(9, 27, 81, 243, 729...), no qual q = 3</span>
+
+                <h3>PG Decrescente</h3>
+                <p>Na progressão decrescente a razão é maior ou diferente de zero, e os números da sequência serão
+                    menores que seus antecessores, ou seja, termos em forma decrescente:</p>
+                <span>PG: (- 6, -36,- 216, - 1296 ...) no qual q = 6</span>
+
+                <h3>PG Oscilante</h3>
+                <p>Na progressão geométrica constante a razão sempre será igual a 1. Portanto, a sequência terá o mesmo
+                    valor.</p>
+                <span>(6,6,6,6,6...) no qual q = 1</span>
+
+                <h3>PG Constante</h3>
+                <p>Nesse tipo de progressão geométrica a razão é maior que zero e feita por números crescentes:</p>
+                <span>(9, 27, 81, 243, 729...), no qual q = 3</span>
+
+                <h3>PG quase Nula</h3>
+                <p>Nessa progressão apenas um elemento da sequência será diferente de zero:</p>
+                <span>(9, 27, 81, 243, 729...), no qual q = 3</span>
+            </div>
+
+            <div id="termos">
+                <hr>
+                <h2>TERMO GERAL DA P.A</h2>
+                <hr>
+                <p>Aplica-se a fórmula abaixo para encontrar os valores de uma determinada progressão geométrica:</p>
+
+                <div id="valorPg">
+                    <img src="../../assets/imagens-conteudos/progressao-geometrica/formula-termo-geral-progressao-geometrica.png"
+                        alt="">
+                    <p> <strong>an:</strong> valor desconhecido <br>
+                        <strong>a1:</strong> primeiro termo da sequência geométrica <br>
+                        <strong>q:</strong> razão elevada ao número desconhecido menos 1
+                    </p>
+                </div>
+                <p>Vamos determinar o 30° termo da progressão geométrica com q = 2 e de sequência inicial 6.</p>
+                <img src="../../assets/imagens-conteudos/progressao-geometrica/termo-30-progressao-geometrica.png"
+                    alt="" class="imgCenter">
+                <p>Veja outro exemplo: <br>
+                    Uma progressão com a = 4 e q = 3 o 5° termo será: <br>
+                    PG: (4, 12, 36,108...)</p>
+                <img src="../../assets/imagens-conteudos/progressao-geometrica/termo-5-progressao-geometrica.png" alt=""
+                    class="imgCenter">
+            </div>
+
+            <div id="soma">
+                <p>A soma dos números de uma progressão geométrica é dada pela seguinte fórmula:</p>
+                <div id="sn">
+                    <img src="../../assets/imagens-conteudos/progressao-geometrica/soma-termos-progressao.png" alt="">
+                    <p>Sn: Soma dos números da PG <br>
+                        a1: primeiro termo da sequência geométrica <br>
+                        q: razão <br>
+                        n: número de termos da PG</p>
+                </div>
+            </div>
+        </main>
+
+            <div id="apoio">
+                <h3>Para melhorar seus estudos...</h3>
+                <p>Matemática pode ser um conteúdo difícil. Para aumentar seu aprendizado, acesse ao mapa mental e a
+                    playlist de vídeo aulas sobre este assunto:</p>
+
+                <div id="a">
+                    <a href="#" id="laranja">
+                        Mapa <br>mental
+                    </a>
+
+                    <a href="#" id="azul">
+                        playlist de <br> videoaulas
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    <div id="botoes">
+        <a href="" id="botaoExercicios">
+            exercícios
+        </a>
+
+        <a href="../2 ano/log.html" id="botaoProximo">
+            próximo
+        </a>
+    </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

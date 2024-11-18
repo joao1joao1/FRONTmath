@@ -5,7 +5,7 @@ export async function getName() {
         return
     }
 
-    const response = await fetch("https://backen-dmath.vercel.app//getname", {
+    const response = await fetch("https://backen-dmath.vercel.app/getname", {
         headers: {
             "Authorization": token
         }

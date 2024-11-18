@@ -8,7 +8,7 @@ async function verifyToken() {
         return
     }
 
-    const response = await fetch("http://localhost:5505/verify", {
+    const response = await fetch("https://backen-dmath.vercel.app/verify", {
         headers: {
             "Authorization": token
         }

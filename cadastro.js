@@ -16,7 +16,7 @@ async function register() {
         password
     }
 
-    const response = await fetch("http://localhost:5505/register", {
+    const response = await fetch("https://backen-dmath.vercel.app/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
